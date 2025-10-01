@@ -9,6 +9,7 @@ public class ifElseCetakKRS20 {
         System.out.print("Masukkan semester saat ini: ");
         int semester = sc.nextInt();
 
+
         if (semester == 1) {
             System.out.println("KRS Semester 1 ditampilkan");
         } else if (semester == 2) {
@@ -29,9 +30,13 @@ public class ifElseCetakKRS20 {
             System.out.println("Semester tidak valid");
         }
 
+
+        String hasil = (semester >= 1 && semester <= 8)
+                        ? "KRS Semester " + semester + " ditampilkan"
+                        : "Semester tidak valid";
+
+        System.out.println("[Versi Ternary] " + hasil);
+
         sc.close();
     }
 }
-    
-    
-
